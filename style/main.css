@@ -1,0 +1,129 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+  --blue: #6495ed;
+  --blue-dark: #1a5276;
+  --green: #6cad0e;
+  --orange: #f4d03f;
+  --orenage-dark: #f1c40f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--preta);
+  font-family: "Comic Neue", cursive;
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: var(--blue);
+  font-size: 2.5rem;
+  margin-left: 5px;
+  font-family: Arial, cursive;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 0.75rem;
+  transition: 0.3s ease all;
+}
+
+header nav a:hover {
+  color: var(--green);
+}
+
+/*filme principal*/
+.filme-principal {
+  font-size: 1rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("../img/banner.jpg");
+  background-size: cover;
+  height: 25rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin-top: 3px;
+  margin-bottom: 3rem;
+}
+
+.filme-principal .titulo {
+  font-size: 2rem;
+  margin-top: 15%;
+  font-family: "Comic Neue", cursive;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: "Comic Neue", cursive;
+  transition: 0.3s ease all;
+  box-shadow: 0.3rem 0.3rem 1em black;
+}
+#btn_duvida {
+  background-color: var(--orange);
+  color: #000;
+}
+#btn_duvida:hover {
+  background-color: var(--orenage-dark);
+  color: #000;
+}
+#btn_lista_completa {
+  background-color: var(--blue);
+  color: #fff;
+}
+#btn_lista_completa:hover {
+  background-color: var(--blue-dark);
+  color: #fff;
+}
+
+.botao:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.botao i {
+  margin-right: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.container {
+  margin-left: 10px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.carrosel-filmes {
+  margin: 10px;
+}
